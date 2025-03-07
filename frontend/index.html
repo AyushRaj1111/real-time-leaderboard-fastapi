@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Real-Time Leaderboard</h1>
+
+    <section id="auth-section">
+        <h2>User Authentication</h2>
+        <form id="register-form">
+            <h3>Register</h3>
+            <label for="register-username">Username:</label>
+            <input type="text" id="register-username" name="username" required>
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <form id="login-form">
+            <h3>Login</h3>
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="username" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="score-section">
+        <h2>Submit Score</h2>
+        <form id="score-form">
+            <label for="game-id">Game ID:</label>
+            <input type="text" id="game-id" name="game_id" required>
+            <label for="score">Score:</label>
+            <input type="number" id="score" name="score" required>
+            <button type="submit">Submit Score</button>
+        </form>
+    </section>
+
+    <section id="leaderboard-section">
+        <h2>Global Leaderboard</h2>
+        <div id="leaderboard"></div>
+    </section>
+
+    <section id="ranking-section">
+        <h2>User Ranking</h2>
+        <div id="user-ranking"></div>
+    </section>
+
+    <section id="top-players-section">
+        <h2>Top Players Report</h2>
+        <div id="top-players"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
